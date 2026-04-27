@@ -1,0 +1,462 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-black;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+  $root: &;
+  animation: loaderFadeIn 1s ease-in forwards 20s;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 60px;
+    background-color: $color-charcoal;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 60px;
+    background-color: $color-white;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: progressBar 22s linear;
+  }
+
+  &__icon {
+    color: $color-white;
+    display: block;
+    position: absolute;
+    //top: 50%;
+    //right: 50%;
+    //bottom: 50%;
+    //left: 50%;
+    transform: translate(50%, 50%);
+  }
+
+}
+  .cutu {
+    animation: fadeIn-cutu $transition-550 ease-out 0.5s;
+    opacity: 0;
+  }
+
+  .etalon {
+    animation: fadeIn-etalon $transition-600 ease-out 2s;
+    opacity: 0;
+  }
+
+  .gals {
+    animation: fadeIn-gals $transition-650 2.5s;
+    opacity: 0;
+  }
+  .ingard {
+    animation: fadeIn-ingrad $transition-650 3.2s;
+    opacity: 0;
+  }
+  .alcon {
+    animation: fadeIn-alcon $transition-650 4.2s;
+    opacity: 0;
+  }
+  .coldy {
+    animation: fadeIn-coldy $transition-650 5.5s;
+    opacity: 0;
+  }
+  .forma {
+    animation: fadeIn-forma $transition-650 7.5s;
+    opacity: 0;
+  }
+  .sminex {
+    animation: fadeIn-sminex $transition-650 6.5s;
+    opacity: 0;
+  }
+  .veren {
+    animation: fadeIn-veren $transition-650 7.5s;
+    opacity: 0;
+  }
+  .wafi {
+    animation: fadeIn-afi $transition-650 8.7s;
+    opacity: 0;
+  }
+  .aeon {
+    animation: fadeIn-aeon $transition-600 8.1s;
+    opacity: 0;
+  }
+  .snegiri {
+    animation: fadeIn-snegiri $transition-650 9.7s;
+    opacity: 0;
+  }
+
+  .whitemark {
+    animation: fadeIn-whitemark 2.5s 14s ease-out, fadeOut-whitemark 2.5s 16s 2;
+    opacity: 0;
+    transform: translate(0%, 0%);
+  }
+
+@keyframes fadeIn-cutu {
+  0%{
+    opacity: 0.2;
+    filter: blur(20px);
+    transform: translate(370%, -229%) scale(1.8);
+  }
+  30% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+    filter: blur(0px);
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(10%, -10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-etalon {
+  0%{
+    opacity: 0.2;
+    filter: blur(20px);
+    transform: translate(-345%, 30%) scale(2);
+  }
+  30% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+    filter: blur(0px);
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(-10%, 10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-gals {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(-125%, 397%) scale(2);
+  }
+  20%{
+    opacity: 0.8;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(-10%, 10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-ingrad {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(171%, 394%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(10%, 10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-alcon {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(-277%, -211%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(-10%, -10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-coldy {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(148%, -392%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(10%, -10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-forma {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(36%, 395%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(10%, 10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-sminex {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(-124%, -495%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+    filter: blur(2px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(-10%, -10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-veren {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(-218%, 393%) scale(2);
+  }
+  20%{
+    opacity: 0.5;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(-10%, 10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-afi {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(0%, -596%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(0%, -10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-aeon {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(367%, 93%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(10%, 10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-snegiri {
+  0%{
+    opacity: 0.2;
+    filter: blur(10px);
+    transform: translate(100%, 394%) scale(2);
+  }
+  20%{
+    opacity: 1;
+  }
+  40% {
+    filter: blur(0px);
+  }
+  60%{
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+  100%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: translate(10%, 10%) scale(0.2);
+  }
+}
+@keyframes fadeIn-whitemark {
+  0%{
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(6);
+  }
+  20%{
+    opacity: 0.8;
+  }
+
+  40% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeOut-whitemark {
+  0%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes loaderFadeIn {
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes progressBar {
+  0%{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
