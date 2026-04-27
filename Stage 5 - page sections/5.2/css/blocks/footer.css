@@ -1,0 +1,100 @@
+.footer {
+  background-color: #23252E;
+  padding: 40px 0 28px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Foros", sans-serif;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 16px 0;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer__address-object {
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, .4);
+}
+
+.footer__address-text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.footer__address-link {
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.footer__logo {
+  text-align: center;
+}
+
+.footer__contacts {
+  text-align: right;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__contacts-tel {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__contacts-mail {
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.footer__social {
+  margin: 0 0 72px 0;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 52px;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 0 48px 0;
+}
+
+.footer__nav-item-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer__description {
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  display: block;
+  margin: 0 0 28px 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__link {
+  display: block;
+  margin: 0 auto;
+}

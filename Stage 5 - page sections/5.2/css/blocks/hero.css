@@ -1,0 +1,72 @@
+.hero__wrapper {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 640px;
+  align-items: center;
+  justify-content: left;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+
+}
+
+.hero__content {
+  padding: 20px 0 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__title {
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin: 0 0 32px 0;
+}
+
+.hero__promo {
+  display: flex;
+  align-items: center;
+  margin: 0 0 60px;
+}
+
+.hero__promo-sales {
+  color: #3C52E6;
+  text-align: center;
+  margin: 0 50px 0 0;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 110px;
+  height: 110px;
+}
+
+.hero__promo-action {
+  font-size: 44px;
+  line-height: 40px;
+  letter-spacing: -.1em;
+}
+
+.hero__sales-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+
+}
+
+.hero__btn {
+  margin: 0;
+  background-color: #23252E;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  line-height: 20px;
+}
+
+
+.hero__img {
+
+}
