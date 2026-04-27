@@ -1,0 +1,38 @@
+.custom-input {
+  position: relative;
+  $root: &;
+
+  &__field {
+    border: 1px solid transparent;
+    background-color: rgba($color-jaguar, .05);
+    border-radius: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    transition: background-color $transition-300;
+
+    &::placeholder {
+      color: rgba($color-jaguar, 0.3);
+    }
+
+    &:hover,
+    &:focus-visible,
+    &:focus {
+      background-color: rgba($color-jaguar, .2);
+    }
+  }
+
+  &--error {
+    border: 1px solid $color-orange-red;
+    border-radius: 200px;
+
+    input {
+      color: $color-orange-red;
+    }
+  }
+
+
+
+}
