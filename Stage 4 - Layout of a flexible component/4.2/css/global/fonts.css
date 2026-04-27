@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: local('IBM Plex Sans'), url("../../fonts/IBMPlexSans-ExtraLight.woff") format("woff"), url("../../fonts/IBMPlexSans-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+      "wdth" 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: local('IBM Plex Sans'), url("../../fonts/IBMPlexSans-Light.woff") format("woff"), url("../../fonts/IBMPlexSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+      "wdth" 100;
+  font-display: swap;
+}
