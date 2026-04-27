@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 36px 72px;
+  max-width: 306px;
+  padding: 0;
+  list-style-type: none;
+
+  &__link {
+    display: flex;
+    color: $color-white-20;
+    transition: color .2s ease;
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:focus-visible {
+    color: $color-white;
+    outline: none;
+  }
+
+  &__link:active {
+    color: $color-white-50;
+  }
+
+}
