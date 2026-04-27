@@ -1,0 +1,11 @@
+.catalog__inner {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  grid-gap: 58px;
+  position: relative;
+  transition: all 0.2s ease;
+  outline: none;
+  align-items: start;
+}
+
+

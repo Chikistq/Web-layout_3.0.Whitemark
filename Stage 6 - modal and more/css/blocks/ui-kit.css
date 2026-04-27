@@ -1,0 +1,67 @@
+.link,
+.header__burger-link {
+  transition: all .2s ease;
+}
+
+.header__performance-link-icon:hover line,
+.header__performance-link-icon:focus line,
+.header__performance-link-icon:focus-visible line,
+.link:hover > line,
+.link:focus > line,
+.link:focus-visible > line {
+  stroke: #AD8361;
+}
+
+
+.header__burger-link:hover rect, .header__burger-link:focus rect {
+  fill: #AD8361;
+}
+
+.header__burger-link:active rect {
+  fill: #ad9271;
+}
+
+
+.link:hover, .link:focus {
+  color: #AD8361;
+}
+
+
+.link:active {
+  color: #ad9271;
+}
+
+.catalog-card__inner:hover,
+.catalog-card__inner:focus {
+  outline: none;
+}
+
+.catalog-card__inner:hover::before,
+.catalog-card__inner:focus::before {
+  content: '';
+  position: absolute;
+  outline: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(117, 114, 110, 0.2);
+  background-image: url('../../images/sprite/plus.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.catalog-card__btn-like:hover,
+.catalog-card__btn-like:focus,
+.catalog-card__inner:hover + .catalog-card__btn-like,
+.catalog-card__inner:focus + .catalog-card__btn-like {
+  color: rgba(239, 237, 231, 1);
+  outline: none;
+}
+
+.catalog-card__inner:active + .catalog-card__btn-like {
+  color: rgba(172, 131, 97, 1);
+}
+
